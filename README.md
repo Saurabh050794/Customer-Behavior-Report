@@ -1,11 +1,11 @@
-# 🛍️ Customer Behavior Analysis
+# Customer Behavior Analysis
 ### SQL + Power BI Project
 
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql) ![PowerBI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi) ![Python](https://img.shields.io/badge/Python-Jupyter-orange?logo=python) ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 This project analyzes **customer shopping behavior** using a MySQL database and visualizes insights through a Power BI dashboard.
 
@@ -18,20 +18,20 @@ This project analyzes **customer shopping behavior** using a MySQL database and 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 customer-behavior-analysis/
 │
-├── 📊 dashboard.pbix           # Power BI dashboard
-├── 🗄️ project__sql_file.sql    # All SQL analysis queries
-├── 📓 customer_project.ipynb   # Python EDA notebook
-└── 📄 README.md
+├──  dashboard.pbix           # Power BI dashboard
+├──  project__sql_file.sql    # All SQL analysis queries
+├──  customer_project.ipynb   # Python EDA notebook
+└──  README.md
 ```
 
 ---
 
-## 🗄️ Database
+##  Database
 
 - **Database Name:** `costomer_behavior`
 - **Table:** `costomer`
@@ -52,7 +52,7 @@ customer-behavior-analysis/
 
 ---
 
-## 🔍 SQL Queries
+##  SQL Queries
 
 ### 1. Revenue by Gender
 ```sql
@@ -127,9 +127,9 @@ GROUP BY customer_segment;
 
 | Segment | Criteria |
 |---------|----------|
-| 🆕 New | 1 previous purchase |
-| 🔄 Returning | 2–4 previous purchases |
-| ⭐ Loyal | 5+ previous purchases |
+|  New | 1 previous purchase |
+|  Returning | 2–4 previous purchases |
+|  Loyal | 5+ previous purchases |
 
 ### 8. Top 3 Products per Category
 ```sql
@@ -167,16 +167,16 @@ ORDER BY total_revenue DESC;
 
 The `dashboard.pbix` file connects directly to MySQL and includes:
 
-- 📊 Revenue breakdown by gender
-- 👥 Customer segmentation visual (New / Returning / Loyal)
-- ⭐ Top products by rating and discount usage
-- 💳 Subscription vs non-subscription revenue
-- 🎂 Age group revenue distribution
-- 🚚 Shipping type spending comparison
+-  Revenue breakdown by gender
+-  Customer segmentation visual (New / Returning / Loyal)
+-  Top products by rating and discount usage
+-  Subscription vs non-subscription revenue
+-  Age group revenue distribution
+-  Shipping type spending comparison
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - MySQL Server 8.0+
@@ -200,17 +200,17 @@ mysql -u root -p costomer_behavior < project__sql_file.sql
 
 ---
 
-## 💡 Key Insights
+##  Key Insights
 
-- 🔁 **Loyal customers** (5+ purchases) are far more likely to be subscribers
-- 💰 **Discount users** spending above average are a high-value target segment
-- 🚚 **Express shipping** customers have a higher average spend than Standard
-- ⭐ **Top-rated products** are concentrated in specific categories
-- 👴 Certain **age groups** contribute disproportionately to total revenue
+-  **Loyal customers** (5+ purchases) are far more likely to be subscribers
+-  **Discount users** spending above average are a high-value target segment
+-  **Express shipping** customers have a higher average spend than Standard
+-  **Top-rated products** are concentrated in specific categories
+-  Certain **age groups** contribute disproportionately to total revenue
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Version | Purpose |
 |------|---------|---------|
